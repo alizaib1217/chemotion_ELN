@@ -93,8 +93,9 @@ export default class ReactionDetailsMainProperties extends Component {
     }
 
     return (
-      <Grid fluid style={{ paddingLeft: 'unset' }}>
-        <Row>
+      <>
+    {/* <Grid fluid style={{ paddingLeft: 'unset' }}> */}
+      <Row className="small-padding">
           <Col md={6}>
             <FormGroup>
               <ControlLabel>Name</ControlLabel>
@@ -168,7 +169,8 @@ export default class ReactionDetailsMainProperties extends Component {
         <Row>
           {TempChartRow}
         </Row>
-      </Grid>
+      {/* </Grid>  */}
+      </>
     );
   }
 }
